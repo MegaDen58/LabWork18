@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 class Formula{
     private static Formula formula = new Formula();
     private double x, y;
@@ -28,9 +30,14 @@ class Formula{
 
 public class Main {
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
         Formula formula = Formula.getInstance();
-        formula.setX(5);
-        formula.setY(2);
+        System.out.print("Введите X: ");
+        double x = in.nextDouble();
+        System.out.print("Введите Y: ");
+        double y = in.nextDouble();
+        formula.setX(x);
+        formula.setY(y);
         System.out.println(formula.Decision());
 
         Formula formula1 = Formula.getInstance();
