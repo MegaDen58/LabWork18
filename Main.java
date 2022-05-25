@@ -38,7 +38,7 @@ public class Main {
         double y = in.nextDouble();
         formula.setX(x);
         formula.setY(y);
-        System.out.println(formula.Decision());
+        System.out.printf("Результат: %s\n", formula.Decision());
 
         Formula formula1 = Formula.getInstance();
         System.out.println(formula1.getX());
